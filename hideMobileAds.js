@@ -1,6 +1,14 @@
 (function(){
-	var displays = [];
-	var heights = [];
+	var displays = ['imobile_adspotdiv1'];
+	var heights = ['picAd2'];
 
-	document.getElementByID('imobile_adspotdiv1').style.display = 'none';
+	displays.forEach(function(target, idx, arr){
+		var elm = document.getElementByID(target);
+		elm.style.display = 'none';
+	});
+	heights.forEach(function(target, idx, arr){
+		var elm = document.getElementByID(target);
+		elm.style.overflow = 'hidden';
+		elm.style.height = '0px';
+	});
 })();

@@ -1,0 +1,1 @@
+javascript:["imobile_adspotdiv1"].forEach(function(a){document.getElementById(a).style.display="none"});["picAd2"].forEach(function(a){a=document.getElementById(a);a.style.overflow="hidden";a.style.height="0px"});
